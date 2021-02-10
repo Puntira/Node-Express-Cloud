@@ -1,12 +1,13 @@
-require(dotenv).config();
-const express =require("express");
-const app =express();
+require('dotenv').config();
+
+const express = require("express");
+const app = express();
 const port = process.env.PORT;
 
-app.get('/',(req,res)=>{
-    res.send("Hello Node.js World!");
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
-app.listen(port,()=>{
-    console.log(Example app listen at http://localhost:${port});
+app.listen(port, () => {
+  console.log(`Example app lisening at http://localhost:${port}`);
 });

@@ -1,15 +1,18 @@
 {
-  "name": "Node-Express-Cloud",
+  "name": "npm-101",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write *.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
